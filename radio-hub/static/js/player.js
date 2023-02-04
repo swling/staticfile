@@ -25,7 +25,7 @@ function _wndt_player(container, post_id, is_home) {
 				<ul><li><a></a></li><li class="is-active"><a></a></li><li><a></a></li></ul>
 			</div>
 		<div id="ajax-player-meta">
-			<span class="icon"><i class="far fa-comment-dots"></i></span><a class="smooth" :href="station.link + '#comments'">Comments</a>&nbsp;
+			<span class="icon"><i class="fas fa-comment-dots"></i></span><a class="smooth" :href="station.link + '#comments'">Comments</a>&nbsp;
 			&nbsp;-&nbsp;<span class="icon"><i class="fas fa-satellite-dish"></i></span>
 			<a v-for="(stream, index) in station.stream" :class="stream == current_stream ? 'is-active' : ''" @click="build_player(stream, index)">{{stream.type}}</a>
 			<span v-html="station.message"></span>
